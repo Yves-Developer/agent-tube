@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import "./globals.css";
+import ClientWrapper from "@/components/ClientWrapper";
 
 export const metadata = {
   title: "Create Next App",
@@ -10,8 +11,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <Navbar />
-        {children}
+        <ClientWrapper>
+          <Navbar />
+          {children}
+        </ClientWrapper>
       </body>
     </html>
   );
