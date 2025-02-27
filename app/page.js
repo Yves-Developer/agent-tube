@@ -1,6 +1,8 @@
 import Features from "@/components/Features";
+import Footer from "@/components/Footer";
+import FooterCTA from "@/components/FooterCTA";
 import Hero from "@/components/Hero";
-import { Button } from "@/components/ui/button";
+import Pricing from "@/components/Pricing";
 
 const Home = () => {
   return (
@@ -9,6 +11,10 @@ const Home = () => {
       <Hero />
       {/* Features */}
       <Features />
+      {/* Pricing */}
+      <Pricing />
+      {/* Footer CTA */}
+      <FooterCTA />
     </main>
   );
 };
